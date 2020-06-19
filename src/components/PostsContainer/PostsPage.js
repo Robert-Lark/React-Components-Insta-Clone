@@ -10,11 +10,11 @@ import "./Posts.css";
 // import data 
 
 const PostsPage = () => {
-  const [data, setData] = useState(dummyData);
+  const [data] = useState(dummyData);
   return (
     <div className="posts-container-wrapper">
 {data.map(p => (
-  <Post key={p.id} propsPassedFromParent={p} />
+  <Post key={p.id} post={p} />
 ))}
     </div>
   );

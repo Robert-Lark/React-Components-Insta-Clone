@@ -8,7 +8,7 @@ import "./Posts.css";
 
 
 const Post = props => {
-  const [likes, setLikes] = useState(props.propsPassedFromParent.likes);
+  const [likes, setLikes] = useState(props.post.likes);
   const incrementLikes = () => {
     setLikes(likes => likes + 1);
   };
