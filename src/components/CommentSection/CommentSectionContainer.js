@@ -11,7 +11,6 @@ const [comments] = useState(props.comments);
     <div>
       {comments.map(c => (
       <Comment key={c.comment} comment={c} />))}
-      
       <CommentInput />
     </div>
   );
