@@ -5,15 +5,14 @@ import Comment from "./Comment";
 import "./Comment.css";
 
 const CommentSection = props => {
-  const [comments, setComments] = useState(props.comments);
+const [comments] = useState(props.comments);
 
-  const incrementComments = () => {
-    setComments(props.comments.username);
-  }
   return (
     <div>
       {comments.map(c => (
-      <CommentInput key={c.username} comments={c}/>))}
+      <Comment key={c.comment} comment={c} />))}
+      
+      <CommentInput />
     </div>
   );
 };

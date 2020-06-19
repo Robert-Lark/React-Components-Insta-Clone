@@ -11,7 +11,6 @@ import "./components/SearchBar/SearchBarContainer.js";
 import PostsPage from "./components/PostsContainer/PostsPage.js";
 
 const App = () => {
-console.log(App)
   return (
     <div className="App">
      <PostsPage />
