@@ -10,7 +10,7 @@ import "./App.css";
 
 
 const App = () => {
-
+console.log(app)
   return (
     <div className="App">
       {/* Add imported components here to render them */}
