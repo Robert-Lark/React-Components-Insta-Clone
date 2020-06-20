@@ -26,3 +26,8 @@
 .social {
   width: 50px;
 }
+.show {
+  width: 700px;
+  height: 300px;
+  border: 5px solid black;
+}

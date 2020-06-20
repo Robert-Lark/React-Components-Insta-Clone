@@ -11,10 +11,11 @@ import Searchbar from "../SearchBar/SearchBarContainer"
 // import data 
 
 const PostsPage = () => {
-  const [data] = useState(dummyData);
+  const [data, setData] = useState(dummyData);
+
   return (
     <div className="posts-container-wrapper">
-      <Searchbar />
+      <Searchbar updateData={setData}/>
 {data.map(p => (
   <Post key={p.id} post={p} />
 ))}
